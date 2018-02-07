@@ -1,4 +1,5 @@
-var game = new Phaser.Game(1200, 600, Phaser.AUTO, 'phaser-example', 
+
+var game = new Phaser.Game(1200, 750, Phaser.AUTO, 'phaser-example', 
 { 
     preload: preload, 
     create: create, 
@@ -8,17 +9,17 @@ var game = new Phaser.Game(1200, 600, Phaser.AUTO, 'phaser-example',
 
 function preload() {
     var graphics = game.add.graphics(0, 0);
-    
+    game.load.image('yolky', 'assets/yolk.png');   
 }
 
 function create() {
 
  var graphics = game.add.graphics(0, 0);
 
- graphics.beginFill(0xF18F01, 1);
+//array of yolks added to the world each with own personalities
 
- graphics.drawCircle(300, 300, 100);
- graphics.drawCircle(500, 70, 100);
+ var baby = new Yolk(game, 200, 300);
+    game.add.existing(baby);
 
  game.stage.backgroundColor = '#2E4057';
 
