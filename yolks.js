@@ -1,6 +1,6 @@
 // Each yolk needs birth number (range)
-// size (same)
 // Location dynamic depening on state
+// movement speed depending on state
 // states
     //happy, neutral, sad
 // internal clock
@@ -8,9 +8,10 @@
     // poked
     // wandering
 
-    Yolk = function (game, x, y){
+    Yolk = function (game){
+        Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky');
         
-        Phaser.Sprite.call(this, game, x, y, 'yolky');
+        game.add.existing(this);
     }	
 
     Yolk.prototype = Object.create(Phaser.Sprite.prototype);
@@ -18,6 +19,5 @@
 
     Yolk.prototype.update = function() {
 
-       // this.angle += this.rotateSpeed;
-    
+
     };
