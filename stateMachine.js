@@ -75,17 +75,17 @@ var stateMachine = function( entity, opts ) {
       }
       
       //Verify the transitional animation has completed before entering update()
-    //   if( this.lastTransition && 
-    //       ( this.entity.animations.currentAnim.name == this.lastTransition.name && this.entity.animations.currentAnim.isPlaying ) ){
-    //     return;
-    //   }
+      if( this.lastTransition && 
+          ( this.entity.animations.currentAnim.name == this.lastTransition.name && this.entity.animations.currentAnim.isPlaying ) ){
+        return;
+      }
   
-    //   if( this.entity.animations.currentAnim.name != this.currentState ){
-    //     if( this.opts.debug ){
-    //       console.log("Play animation: " + this.currentState );
-    //     }
-    //     this.entity.animations.play( this.currentState );
-    //   }
+      if( this.entity.animations.currentAnim.name != this.currentState ){
+        if( this.opts.debug ){
+          console.log("Play animation: " + this.currentState );
+        }
+        this.entity.animations.play( this.currentState );
+      }
       
       if (state.update) {
         state.update();
