@@ -16,40 +16,35 @@ var game = new Phaser.Game(1200, 650, Phaser.AUTO, 'phaser-example',
 
 function preload() {
     var graphics = game.add.graphics(0, 0);
-   // game.load.image('yolky', 'assets/yolk.png');
-
+    // Load sprite sheet and map to Json File
     game.load.atlas('yolky', 'assets/yolkSheet.png', 'assets/yolkSheet.json',Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
 
-    
     game.stage.backgroundColor = '#2E4057';
 }
 
 function create() {
+    // Add group to the game
     yolkWorld = game.add.group();
+    
     var rect = new Phaser.Rectangle(50, 50, 1100, 600);
 
-    //group of yolks added to the world each with own personalities
+    // Create an array of the amount of yolks for the world
     for( var i = 0; i < 10; i++)
    {
      allYolks[i] = allYolks.push("yolk" + i);
-        //randomly assign birth number
     }
-
+    // Populate the group with yolks that have own personalities
     for (var j = 0; j < allYolks.length; j++){
-
+        //add a randomly assign birth number
        childYolk = yolkWorld.add(new Yolk(game, allYolks[j]));
-
        childYolk.inputEnabled = true;
-    
        childYolk.input.useHandCursor = true;
-    
-       childYolk.events.onInputDown.add(iTapped, this);
-              
+       childYolk.events.onInputDown.add(iTapped, this);     
     }
 
     yolkWorld.alignIn(rect, Phaser.RIGHT_CENTER);
 
-    // resize to fill full screen
+    // Resize to fill full screen
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
     fullScreen = game.input.keyboard.addKey(Phaser.Keyboard.ONE);
     fullScreen.onDown.add(gofull, this);
@@ -65,12 +60,13 @@ function iTapped(sprite, pointer) {
     }
 }
 
+// Predicate function used for transition
 function changeState()
 {
     return childYolk.sm.initialState == "sad";
 }
 
-
+// Function to change to full screen view
 function gofull() {
     if (game.scale.isFullScreen)
     {

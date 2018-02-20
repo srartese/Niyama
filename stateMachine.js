@@ -74,7 +74,7 @@ var stateMachine = function( entity, opts ) {
         this.previousState = this.currentState;
       }
       
-      //Verify the transitional animation has completed before entering update()
+      // Verify the transitional animation has completed before entering update()
       if( this.lastTransition && 
           ( this.entity.animations.currentAnim.name == this.lastTransition.name && this.entity.animations.currentAnim.isPlaying ) ){
         return;

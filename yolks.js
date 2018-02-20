@@ -14,8 +14,7 @@
         game.add.existing(this, i);
 
         
-        // Animations
-
+        // Animations for each transition
         this.animations.add('neutral', [1], 30, false);
         this.animations.add('neutral_to_sad', [2], 40, false);
         this.animations.add('neutral_to_happy', [0], 40, false);
@@ -50,10 +49,11 @@
             exit:   function(){ }
         }); 
 
-            this.animations.play( this.sm.initialState );
+        this.animations.play( this.sm.initialState );
                             
             game.add.existing(this);
 
+            // Random movement for each yolk
             this.game.time.events.loop(3000, function() {  
                 this.game.add.tween(this).to({x: this.game.world.randomX, y: this.game.world.randomY},10000, Phaser.Easing.Quadratic.InOut, true);}, this)
     }	
