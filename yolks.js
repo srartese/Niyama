@@ -1,18 +1,28 @@
-// Each yolk needs birth number (range)
 // Location dynamic depening on state
-// movement speed depending on state
-// states
-    //happy, neutral, sad
 // internal clock
 // states
     // poked
     // wandering
+    var birthNumber;
+    var happinessScale;
 
-    Yolk = function ( game, i){
-        Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky');
-        console.log(i);
+    Yolk = function ( game, i, birth){
+        //birthNumber = game.rnd.integerInRange(0, 10);
+        Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
+        //console.log(i);
+        id = i;
         game.add.existing(this, i);
+        birthNumber = birth;
+        //Think about probability for birth number
+     
+        //console.log("birthNumber: " + birthNumber);
 
+        // Add internal happiness scale
+        let initialHappiness = birthNumber;
+        happinessScale = birthNumber;
+
+        //console.log("initialHappiness: " + initialHappiness);
+        //console.log("happinessScale: " + happinessScale);
         
         // Animations for each transition
         this.animations.add('neutral', [1], 30, false);
@@ -52,14 +62,14 @@
         this.animations.play( this.sm.initialState );
                             
             game.add.existing(this);
-
-            // Random movement for each yolk
-            this.game.time.events.loop(3000, function() {  
-                this.game.add.tween(this).to({x: this.game.world.randomX, y: this.game.world.randomY},10000, Phaser.Easing.Quadratic.InOut, true);}, this)
     }	
 
     Yolk.prototype = Object.create(Phaser.Sprite.prototype);
     Yolk.prototype.constructor = Yolk;
+
+    Yolk.prototype.myHappiness = function() {
+        return happinessScale;
+     }
 
     Yolk.prototype.update = function(){
         this.sm.update();

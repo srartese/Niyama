@@ -24,7 +24,7 @@ function preload() {
 
 function create() {
     // Add group to the game
-    yolkWorld = game.add.group();
+    yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
     
     var rect = new Phaser.Rectangle(50, 50, 1100, 600);
 
@@ -35,14 +35,29 @@ function create() {
     }
     // Populate the group with yolks that have own personalities
     for (var j = 0; j < allYolks.length; j++){
-        //add a randomly assign birth number
-       childYolk = yolkWorld.add(new Yolk(game, allYolks[j]));
+
+       childYolk = yolkWorld.add(new Yolk(game, allYolks[j], game.rnd.integerInRange(0, 10)));
        childYolk.inputEnabled = true;
        childYolk.input.useHandCursor = true;
-       childYolk.events.onInputDown.add(iTapped, this);     
+       childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness()});  
+       //console.log(childYolk.myHappiness());
+       //console.log(childYolk)
+       //Movement speed based on birthNumber
+       if(childYolk.myHappiness() <= 3){
+        childYolk.body.velocity.set(game.rnd.integerInRange(-1, 1), game.rnd.integerInRange(-1, 1));  
+       } 
+       if(childYolk.myHappiness() >= 4 && childYolk.myHappiness() <=6 ){
+        childYolk.body.velocity.set(game.rnd.integerInRange(-20, 20), game.rnd.integerInRange(-20, 20));  
+       } 
+       else
+            childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50));  
     }
 
     yolkWorld.alignIn(rect, Phaser.RIGHT_CENTER);
+
+    yolkWorld.setAll('body.collideWorldBounds', true);
+    yolkWorld.setAll('body.bounce.x', 1);
+    yolkWorld.setAll('body.bounce.y', 1);
 
     // Resize to fill full screen
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
@@ -51,13 +66,29 @@ function create() {
 }
 
 function iTapped(sprite, pointer) {
-    console.log("current state: " + childYolk.sm.currentState);
+    console.log("current state: " + sprite.sm.currentState);
+    console.log("Happiness: " + this.happiness);
+    //console.log(sprite.myHappiness());
     if(sprite.sm.currentState == "sad"){
-        sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState );
+        sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0));   
+        sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
+        showMenu();
+        //show menu
+        //if menu item clicked increase happiness and add movement
+        this.happiness = 6;  
     }
     if(sprite.sm.currentState == "neutral"){
         sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
+        this.happiness = 10;
     }
+}
+
+function moveYolk(){
+
+}
+
+function showMenu(){
+
 }
 
 // Predicate function used for transition
@@ -79,6 +110,7 @@ function gofull() {
 }
 
 function update() {
+    this.game.physics.arcade.collide(yolkWorld);
 }
 
 function render () {
