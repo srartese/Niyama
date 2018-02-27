@@ -15,7 +15,7 @@
         birthNumber = birth;
         //Think about probability for birth number
      
-        //console.log("birthNumber: " + birthNumber);
+        console.log("birthNumber: " + birthNumber);
 
         // Add internal happiness scale
         let initialHappiness = birthNumber;
@@ -25,14 +25,17 @@
         //console.log("happinessScale: " + happinessScale);
         
         // Animations for each transition
+        if(happinessScale >= 4 && happinessScale <=  6)
         this.animations.add('neutral', [1], 30, false);
         this.animations.add('neutral_to_sad', [2], 40, false);
         this.animations.add('neutral_to_happy', [0], 40, false);
         
+        if(happinessScale < 3)
         this.animations.add('sad', [2], 35, false);
         this.animations.add('sad_to_neutral', [1], 40, false);
         this.animations.add('sad_to_happy', [0], 40, false);
         
+        if(happinessScale > 6)
         this.animations.add('happy', [0], 10, false);
         this.animations.add('happy_to_sad', [2], 40, false);
         this.animations.add('happy_to_neutral', [1], 40, false);

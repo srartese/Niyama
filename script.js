@@ -5,6 +5,9 @@ var yolkWorld;
 var fullScreen;
 var allYolks = [];
 var childYolk;
+var highFive;
+var hug;
+var smile;
 
 var game = new Phaser.Game(1200, 650, Phaser.AUTO, 'phaser-example', 
 { 
@@ -72,7 +75,7 @@ function iTapped(sprite, pointer) {
     if(sprite.sm.currentState == "sad"){
         sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0));   
         sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
-        showMenu();
+        showMenu(sprite);
         //show menu
         //if menu item clicked increase happiness and add movement
         this.happiness = 6;  
@@ -87,9 +90,35 @@ function moveYolk(){
 
 }
 
-function showMenu(){
+function showMenu(sprite){
+    console.log(sprite)
+    highFive =  game.add.sprite(sprite.world.x - 60, sprite.world.y - 40, 'yolky');
+    highFive.events.onInputDown.add(fiver,this);  
+
+
+    hug = game.add.sprite(sprite.world.x - 0, sprite.world.y - 60, 'yolky');
+    hug.events.onInputDown.add(hugged,this);  
+
+    smile = game.add.sprite(sprite.world.x + 60, sprite.world.y - 40, 'yolky');
+    smile.events.onInputDown.add(smileKid, this);  
+    //if sprite moves at stopped guy, he starts moving
+    // timer to close menu
+}
+
+function fiver(sprite, pointer){
+ console.log("five");
+}
+
+function hugged(sprite, pointer){
+    console.log("hug");
 
 }
+
+function smileKid(sprite, pointer){
+    console.log("smile");
+
+}
+
 
 // Predicate function used for transition
 function changeState()
