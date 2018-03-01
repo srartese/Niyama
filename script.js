@@ -53,7 +53,7 @@ function create() {
        childYolk.input.useHandCursor = true;
        childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness()});  
 
-       console.log(childYolk);
+       //console.log(childYolk);
        //Movement speed based on birthNumber
        if(childYolk.myHappiness() <= 3){
         childYolk.body.velocity.set(game.rnd.integerInRange(-1, 1), game.rnd.integerInRange(-1, 1));  
@@ -79,9 +79,7 @@ function create() {
 function iTapped(sprite, pointer) {
     console.log("current state: " + sprite.sm.currentState);
     console.log("Happiness: " + this.happiness);
-    console.log(sprite.sm);
-
-    console.log(sprite.myHappiness());
+    
     if(sprite.sm.currentState == "sad"){
         sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0));   
         sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
@@ -105,21 +103,28 @@ function moveYolk(){
 }
 
 function showMenu(sprite){
-    console.log(sprite)
-    highFive =  game.add.sprite(sprite.world.x - 60, sprite.world.y - 40, 'smile');
+    //console.log(sprite)
+    highFive =  game.add.sprite(sprite.world.x - 60, sprite.world.y - 40, 'five');
+    highFive.inputEnabled = true;
+    highFive.input.useHandCursor = true;
     highFive.events.onInputDown.add(fiver,sprite);  
 
     hug = game.add.sprite(sprite.world.x - 0, sprite.world.y - 60, 'hug');
+    hug.inputEnabled = true;
+    hug.input.useHandCursor = true;
     hug.events.onInputDown.add(hugged,this);  
 
-    smile = game.add.sprite(sprite.world.x + 60, sprite.world.y - 40, 'five');
+    smile = game.add.sprite(sprite.world.x + 60, sprite.world.y - 40, 'smile');
+    smile.inputEnabled = true;
+    smile.input.useHandCursor = true;
     smile.events.onInputDown.add(smileKid, this);  
+    
     //if sprite moves at stopped guy, he starts moving
     // timer to close menu
 }
 
 function fiver(sprite, pointer){
- console.log("five");
+    console.log("five");
 }
 
 function hugged(sprite, pointer){
