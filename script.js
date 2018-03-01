@@ -29,6 +29,11 @@ function preload() {
 }
 
 function create() {
+    //Multi-touch functions... 6 touches
+    game.input.addPointer();
+    game.input.addPointer();
+    game.input.addPointer();
+    game.input.addPointer();
 
     // Add group to the game
     yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
