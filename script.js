@@ -82,13 +82,13 @@ function iTapped(sprite, pointer) {
     
     if(sprite.sm.currentState == "sad"){
         sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0));   
-        sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
+       // sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
         showMenu(sprite);
         //if menu item clicked increase happiness and add movement
         this.happiness = 6;  
     }
     if(sprite.sm.currentState == "neutral"){
-        //sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
+        sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
         this.happiness = 10;
     }
 
@@ -104,21 +104,21 @@ function moveYolk(){
 
 function showMenu(sprite){
     //console.log(sprite)
-    highFive =  game.add.sprite(sprite.world.x - 60, sprite.world.y - 40, 'five');
+    highFive =  game.add.sprite(sprite.world.x - 40, sprite.world.y - 20, 'five');
     highFive.inputEnabled = true;
     highFive.input.useHandCursor = true;
     highFive.events.onInputDown.add(fiver,sprite);  
 
-    hug = game.add.sprite(sprite.world.x - 0, sprite.world.y - 60, 'hug');
+    hug = game.add.sprite(sprite.world.x + 20, sprite.world.y - 40, 'hug');
     hug.inputEnabled = true;
     hug.input.useHandCursor = true;
     hug.events.onInputDown.add(hugged,this);  
 
-    smile = game.add.sprite(sprite.world.x + 60, sprite.world.y - 40, 'smile');
+    smile = game.add.sprite(sprite.world.x + 80, sprite.world.y - 20, 'smile');
     smile.inputEnabled = true;
     smile.input.useHandCursor = true;
     smile.events.onInputDown.add(smileKid, this);  
-    
+
     //if sprite moves at stopped guy, he starts moving
     // timer to close menu
 }
