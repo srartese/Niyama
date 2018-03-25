@@ -1,4 +1,9 @@
-// modified from https://github.com/drhayes/impactjs-statemachine
+    /* 
+        State Machine Class for Niyama 2018
+        Tracks transisions between states 
+        modified from https://github.com/drhayes/impactjs-statemachine
+    */ 
+
 var stateMachine = function( entity, opts ) {
     this.unnamedTransitionCounter = 0;
   
