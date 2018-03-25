@@ -63,7 +63,7 @@ function create() {
        childYolk.input.useHandCursor = true;
        childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });  
 
-       //Movement speed based on birthNumber
+       // Movement speed based on birthNumber
        if(childYolk.myHappiness() <= 3){
         childYolk.body.velocity.set(game.rnd.integerInRange(-1, 1), game.rnd.integerInRange(-1, 1));  
        } 
@@ -71,10 +71,15 @@ function create() {
          childYolk.body.velocity.set(game.rnd.integerInRange(-20, 20), game.rnd.integerInRange(-20, 20));  
        } 
        else
-            childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50));  
+            childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50)); 
+            
+        // Start decay timers
     }
+
+
     yolkWorld.alignIn(rect, Phaser.RIGHT_CENTER);
 
+    // Yolks cannot leave the square assigned as the world
     yolkWorld.setAll('body.collideWorldBounds', true);
     yolkWorld.setAll('body.bounce.x', 1);
     yolkWorld.setAll('body.bounce.y', 1);
@@ -103,17 +108,27 @@ function iTapped(sprite, pointer, happiness) {
     }
     if(sprite.sm.currentState == "neutral"){
         //sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
-        console.log("burst");
+        console.log("BURST");
         interactions++;
-        sprite.happinessScale = sprite.happinessScale + 1;
+        sprite.happinessScale = sprite.happinessScale + 3;
+        console.log(sprite.happinessScale);
         checkState(sprite);
     }
 
     if(sprite.sm.currentState == "happy"){
-        console.log("happy"); 
+        console.log("BURST");
+        interactions++;
+        if (sprite.happinessScale < 10)
+            sprite.happinessScale = sprite.happinessScale + 1;
+        else 
+            sprite.happinessScale = sprite.happinessScale;
+
+        console.log(sprite.happinessScale);
+        checkState(sprite);
      }
 }
 
+// Display menu with icon items and touch events
 function showMenu(sprite, menuid, happiness){
         var highFive = sprite.addChild(game.make.sprite(-40, -20, 'five'))
         highFive.inputEnabled = true;
@@ -196,12 +211,36 @@ function feelGood(sprite){ // Deals with the change when interacted with
     // Start timer
     sprite.ripple.start();
 
+    // Start ripple effect
 }
 
+// Brings he yolk back to normal and stops the ripple effect
 function normalizeIt(){
     console.log("DONE RIPPLING");
+    this.interacted.transition('inspired_to_static', 'inspired', 'static', changeState );
     this.ripple.remove();
 }
+
+
+
+// Start decay when yolk is done being interacted with 
+// At happiness level 10
+function decaying(sprite){
+    //Decays happiness over time
+    // Start decay timer
+    sprite.decay.start(); 
+}
+
+// When Yolk created start happiness decay
+function lifeCycle(){
+
+    // When happiness = 0 stop decay
+    if(this.happinessScale == 0)
+        this.happinessScale = 0;
+    
+}
+
+
 
 // Function to change to full screen view
 function gofull() {

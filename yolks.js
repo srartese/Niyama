@@ -26,7 +26,19 @@
         else
             yLoc = game.rnd.integerInRange(0, 250);
 
-        //Add yolk sprite to the world
+        
+        // Create a decayTime for each yolk based on the birthNumber
+        if(this.birthNumber == 0)
+            this.birthTime = 10000
+        else if(this.birthNumber == 1)
+            this.birthTime = 12000
+        else
+            this.birthTime = this.birthNumber * 7000;
+
+        this.decay = game.time.create(false);
+        this.decay.add(this.birthTime, decaying, this);
+
+        // Add yolk sprite to the world
         Phaser.Sprite.call(this, game,  game.world.randomX, yLoc, 'yolky' );
 
         // Give each yolk a unique ID
