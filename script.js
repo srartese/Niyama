@@ -11,12 +11,15 @@ var bounds;
 var fullScreen;
 var lifeTimer;
 
+
 //Yolk variables
 var yolkWorld;
 var allYolks = [];
 var childYolk;
 var interactions;
-var yolkTimer;
+var yolkCounter;
+var numYolks = 50;
+//var yolkTimer;
 
 
 var game = new Phaser.Game(1200, 650, Phaser.AUTO, 'phaser-example', 
@@ -46,56 +49,25 @@ function create() {
     game.input.addPointer();
 
     // Add group to the game
-   yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
-    //yolkWorld = game.add.group(Phaser.Physics.ARCADE)
-    
-    var rect = new Phaser.Rectangle(50, 50, 1100, 600);
+    yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
+
+    //this.rect = new Phaser.Rectangle(50, 50, 1100, 600);
 
     interactions = 0;
+    yolkCounter = 0;
 
     lifeTimer = game.time.create(false);
     lifeTimer.loop(1000, lifeCycle, this);
 
-// +    yolkTimer.time.create(1000, false);
-// +
-// +    yolkTimer.repeat(1, 10);
-// +
-// +    yolkTimer.onEvent.add(addSprite, this);
-// +
-    // Create an array of the amount of yolks for the world
-    for( var i = 0; i < 50; i++)
+    // Create a repeating delay for the creation of each yolk
+    game.time.events.repeat(Phaser.Timer.SECOND * 2, numYolks, addYolk, this);
+
+
+   // Create an array of the amount of yolks for the world
+    for( var i = 0; i < numYolks; i++)
     {
      allYolks[i] = allYolks.push("yolk" + i);
     }
-
-    // Populate the group with yolks that have own personalities
-    for (var j = 0; j < allYolks.length; j++){
-    
-       childYolk = yolkWorld.add(new Yolk(game, allYolks[j], game.rnd.integerInRange(0, 10)));
-       childYolk.inputEnabled = true;
-       childYolk.input.useHandCursor = true;
-       childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });  
-
-       // Movement speed based on birthNumber
-       if(childYolk.myHappiness() <= 3){
-        childYolk.body.velocity.set(game.rnd.integerInRange(-1, 1), game.rnd.integerInRange(-1, 1));  
-       } 
-       if(childYolk.myHappiness() >= 4 && childYolk.myHappiness() <=6 ){
-         childYolk.body.velocity.set(game.rnd.integerInRange(-20, 20), game.rnd.integerInRange(-20, 20));  
-       } 
-       else
-            childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50)); 
-            
-        // Start decay timers
-    }
-
-
-    yolkWorld.alignIn(rect, Phaser.RIGHT_CENTER);
-
-    // Yolks cannot leave the square assigned as the world
-    yolkWorld.setAll('body.collideWorldBounds', true);
-    yolkWorld.setAll('body.bounce.x', 1);
-    yolkWorld.setAll('body.bounce.y', 1);
 
     // Resize to fill full screen
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
@@ -103,6 +75,35 @@ function create() {
     fullScreen.onDown.add(gofull, this);
 }
 
+//Adds the yolk into the world at start delay
+function addYolk(){
+    childYolk = yolkWorld.add(new Yolk(game, allYolks[yolkCounter], game.rnd.integerInRange(0, 10)));
+    childYolk.inputEnabled = true;
+    childYolk.input.useHandCursor = true;
+    childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });  
+
+    // Movement speed based on birthNumber
+    if(childYolk.myHappiness() <= 3){
+     childYolk.body.velocity.set(game.rnd.integerInRange(-1, 1), game.rnd.integerInRange(-1, 1));  
+    } 
+    if(childYolk.myHappiness() >= 4 && childYolk.myHappiness() <=6 ){
+      childYolk.body.velocity.set(game.rnd.integerInRange(-20, 20), game.rnd.integerInRange(-20, 20));  
+    } 
+    else
+         childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50)); 
+
+    //yolkWorld.alignIn(this.rect, Phaser.RIGHT_CENTER);
+
+    // Yolks cannot leave the square assigned as the world
+    yolkWorld.setAll('body.collideWorldBounds', true);
+    yolkWorld.setAll('body.bounce.x', 1);
+    yolkWorld.setAll('body.bounce.y', 1);
+
+    // Give each yolk the proper number from what would be in a loop     
+    yolkCounter++
+}
+
+// When Yolk is interacted with
 function iTapped(sprite, pointer, happiness) {
     //console.log("current state: " + sprite.sm.currentState);
     console.log("Happiness: " + sprite.happinessScale);
@@ -294,8 +295,8 @@ function gofull() {
 function update() {
     // Adds collisions to all Yolks
     this.game.physics.arcade.collide(yolkWorld);
-    
     lifeTimer.start();
+    
 }
 
 // Render Function
