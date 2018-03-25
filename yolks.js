@@ -3,20 +3,21 @@
 // states
     // poked
     // wandering
-    var birthNumber;
-    var happinessScale;
+
 
     Yolk = function ( game, i, birth){
-        Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
+       // Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
+         Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
+
         //console.log(i);
         id = i;
         game.add.existing(this, i);
-        birthNumber = birth;
+        this.birthNumber = birth;
         //Think about probability for birth number
         //console.log("birthNumber: " + birthNumber);
         // Add internal happiness scale
-        let initialHappiness = birthNumber;
-        happinessScale = birthNumber;
+        this.initialHappiness = this.birthNumber;
+        this.happinessScale = this.birthNumber;
 
         //console.log("initialHappiness: " + initialHappiness);
         //console.log("happinessScale: " + happinessScale);
@@ -56,15 +57,34 @@
             exit:   function(){ }
         }); 
        
-        if(happinessScale >= 4 && happinessScale <= 6)
+        if(this.happinessScale >= 4 && this.happinessScale <= 6)
         this.sm.initialState = "neutral";
-        if(happinessScale <= 3)
+        if(this.happinessScale <= 3)
         this.sm.initialState = "sad";
-        if(happinessScale >= 6)
+        if(this.happinessScale >= 6)
         this.sm.initialState = "happy";
 
         this.animations.play( this.sm.initialState );
-        //console.log(this.sm.initialState);                  
+        //console.log(this.sm.initialState); 
+        
+
+        // State Machine
+        this.interacted = new stateMachine( this, { debug: false } );
+        //var self = this;
+        
+        this.interacted.state('static', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        });
+        
+        this.interacted.state('interacting', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        });
+
+
         game.add.existing(this);
 
     }	
@@ -73,9 +93,15 @@
     Yolk.prototype.constructor = Yolk;
 
     Yolk.prototype.myHappiness = function() {
-        return happinessScale;
+        return this.happinessScale;
      }
 
     Yolk.prototype.update = function(){
         this.sm.update();
+        this.interacted.update();
+       
       }
+
+    Yolk.prototype.myID = function(){
+        return id;
+    }
