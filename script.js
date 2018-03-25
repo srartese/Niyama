@@ -9,12 +9,15 @@
 var app = app || {};
 var bounds;
 var fullScreen;
+var lifeTimer;
 
 //Yolk variables
 var yolkWorld;
 var allYolks = [];
 var childYolk;
 var interactions;
+var yolkTimer;
+
 
 var game = new Phaser.Game(1200, 650, Phaser.AUTO, 'phaser-example', 
 { 
@@ -50,14 +53,24 @@ function create() {
 
     interactions = 0;
 
+    lifeTimer = game.time.create(false);
+    lifeTimer.loop(1000, lifeCycle, this);
+
+// +    yolkTimer.time.create(1000, false);
+// +
+// +    yolkTimer.repeat(1, 10);
+// +
+// +    yolkTimer.onEvent.add(addSprite, this);
+// +
     // Create an array of the amount of yolks for the world
-    for( var i = 0; i < 10; i++)
-   {
+    for( var i = 0; i < 50; i++)
+    {
      allYolks[i] = allYolks.push("yolk" + i);
     }
+
     // Populate the group with yolks that have own personalities
     for (var j = 0; j < allYolks.length; j++){
-
+    
        childYolk = yolkWorld.add(new Yolk(game, allYolks[j], game.rnd.integerInRange(0, 10)));
        childYolk.inputEnabled = true;
        childYolk.input.useHandCursor = true;
@@ -144,6 +157,8 @@ function showMenu(sprite, menuid, happiness){
         smile.inputEnabled = true;
         smile.input.useHandCursor = true;
         smile.events.onInputDown.add(smileKid, this);  
+
+
     //if sprite moves at stopped guy, he starts moving
     // timer to close menu
 }
@@ -195,6 +210,7 @@ function increaseHappiness(sprite){
 function checkState(sprite){
     if(sprite.happinessScale > 6)
         sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState);
+
 }
 
 // Predicate function used for transition
@@ -221,26 +237,46 @@ function normalizeIt(){
     this.ripple.remove();
 }
 
-
-
-// Start decay when yolk is done being interacted with 
-// At happiness level 10
-function decaying(sprite){
-    //Decays happiness over time
-    // Start decay timer
-    sprite.decay.start(); 
-}
-
-// When Yolk created start happiness decay
+// When Yolk created start happiness decay over time
 function lifeCycle(){
+    yolkWorld.forEach(function(yolk) {
+        
+        // Decay happiness based on birthNumber and rate
+        if(yolk.birthNumber >= 2){
+            console.log("Before: " + yolk.happinessScale);
+            var equation = 11/ (yolk.birthNumber * 7);
+            yolk.happinessScale = yolk.happinessScale - equation;
+        }
+        else if(yolk.birthNumber = 1){
+            console.log(yolk.happinessScale);
+            var equation = 11/12;
+            yolk.happinessScale = yolk.happinessScale - equation;
+        }
 
-    // When happiness = 0 stop decay
-    if(this.happinessScale == 0)
-        this.happinessScale = 0;
-    
+        else if(yolk.birthNumber = 0){
+            var equation = 11/10;
+            yolk.happinessScale = yolk.happinessScale - equation;   
+        }
+
+        //Check happiness to change state and animation
+        if(yolk.happinessScale < 7 && yolk.happinessScale > 3)
+        {
+            yolk.sm.transition('happy_to_neutral', 'happy', 'neutral', changeState);
+        }
+        else if(yolk.happinessScale < 3)
+        {
+            yolk.sm.transition('neutral_to_sad', 'neutral', 'sad', changeState);
+        }
+
+        // When happiness = 0 stop decay
+        if(yolk.happinessScale < 0)
+        {
+            yolk.happinessScale = 0;
+        }
+
+        console.log("After: " + yolk.happinessScale);
+    });
 }
-
-
 
 // Function to change to full screen view
 function gofull() {
@@ -258,10 +294,13 @@ function gofull() {
 function update() {
     // Adds collisions to all Yolks
     this.game.physics.arcade.collide(yolkWorld);
+    
+    lifeTimer.start();
 }
 
 // Render Function
 function render () {
+
 }
 
      

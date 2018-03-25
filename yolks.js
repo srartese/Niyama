@@ -35,9 +35,6 @@
         else
             this.birthTime = this.birthNumber * 7000;
 
-        this.decay = game.time.create(false);
-        this.decay.add(this.birthTime, decaying, this);
-
         // Add yolk sprite to the world
         Phaser.Sprite.call(this, game,  game.world.randomX, yLoc, 'yolky' );
 
