@@ -6,13 +6,27 @@
 
 
     Yolk = function ( game, i, birth){
+
+        this.birthNumber = birth;
        // Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
-         Phaser.Sprite.call(this, game, game.world.randomX, game.world.randomY, 'yolky' );
+        var yLoc;
+        if( this.birthNumber <= 3)
+        {
+            yLoc = game.rnd.integerInRange(350,600);
+            console.log(yLoc)
+        }
+        else if (this.birthNumber > 3 && this.birthNumber < 6)
+        {
+            yLoc = game.rnd.integerInRange(200, 400);
+        }
+        else
+            yLoc = game.rnd.integerInRange(0, 250);
+
+         Phaser.Sprite.call(this, game,  game.world.randomX, yLoc, 'yolky' );
 
         //console.log(i);
         id = i;
         game.add.existing(this, i);
-        this.birthNumber = birth;
         //Think about probability for birth number
         //console.log("birthNumber: " + birthNumber);
         // Add internal happiness scale
