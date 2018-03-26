@@ -105,7 +105,8 @@ function addYolk(){
     yolkWorld.setAll('body.bounce.x', 1);
     yolkWorld.setAll('body.bounce.y', 1);
 
-    //game.debug.body(childYolk);
+    //SEE BOUNDING BOX
+   //game.debug.body(childYolk);
 
     // Give each yolk the proper number from what would be in a loop     
     yolkCounter++
@@ -251,7 +252,7 @@ function feelGood(sprite){ // Deals with the change when interacted with
     // Start timer
     sprite.ripple.start();
 
-    // Start ripple effect
+    // Start ripple effect interaction - once movement programed in
 }
 
 // Brings he yolk back to normal and stops the ripple effect
@@ -313,11 +314,28 @@ function gofull() {
     }
 }
 
+// For every collision there is a chance of a random  interaction
+function collisionHandler(yolk1, yolk2){
+    var positiveInteraction = game.rnd.integerInRange(0, 100);
+    // 1/100 chance its positive
+    if(positiveInteraction == 50)
+    {
+        // Increase happinessScale for both yolks
+        yolk1.happinessScale = yolk1.happinessScale + 1;
+        yolk2.happinessScale = yolk1.happinessScale + 1;
+    }
+    // 1/100 chance its negative
+    else if (positiveInteraction == 25){
+        // Decrease happinessScale for both yolks
+        yolk1.happinessScale = yolk1.happinessScale - 2;
+        yolk2.happinessScale = yolk1.happinessScale - 2;
+    }
+    
+}
 // Update Function
 function update() {
     // Adds collisions to all Yolks
-    this.game.physics.arcade.collide(yolkWorld);
-
+    this.game.physics.arcade.collide(yolkWorld, yolkWorld, collisionHandler, null, this);
 }
 
 // Render Function
