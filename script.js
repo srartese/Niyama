@@ -57,7 +57,7 @@ function create() {
     yolkCounter = 0;
 
     lifeTimer = game.time.create(false);
-    lifeTimer.loop(1000, lifeCycle, this);
+    lifeTimer.loop(2000, lifeCycle, this);
 
     // Create a repeating delay for the creation of each yolk
     game.time.events.repeat(Phaser.Timer.SECOND * 2, numYolks, addYolk, this);
@@ -68,6 +68,9 @@ function create() {
     {
      allYolks[i] = allYolks.push("yolk" + i);
     }
+
+     // Start Life Cycle Delay
+     lifeTimer.start();
 
     // Resize to fill full screen
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
@@ -80,7 +83,9 @@ function addYolk(){
     childYolk = yolkWorld.add(new Yolk(game, allYolks[yolkCounter], game.rnd.integerInRange(0, 10)));
     childYolk.inputEnabled = true;
     childYolk.input.useHandCursor = true;
-    childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });  
+    childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });
+    
+    childYolk.body.setCircle(45);
 
     // Movement speed based on birthNumber
     if(childYolk.myHappiness() <= 3){
@@ -95,9 +100,12 @@ function addYolk(){
     //yolkWorld.alignIn(this.rect, Phaser.RIGHT_CENTER);
 
     // Yolks cannot leave the square assigned as the world
+
     yolkWorld.setAll('body.collideWorldBounds', true);
     yolkWorld.setAll('body.bounce.x', 1);
     yolkWorld.setAll('body.bounce.y', 1);
+
+    //game.debug.body(childYolk);
 
     // Give each yolk the proper number from what would be in a loop     
     yolkCounter++
@@ -144,32 +152,44 @@ function iTapped(sprite, pointer, happiness) {
 
 // Display menu with icon items and touch events
 function showMenu(sprite, menuid, happiness){
+      // Closes out menu after no interaction
+        var menuTimer = game.time.create(false);
+        menuTimer.add(5000, cancelMenu,{yolk: sprite}, this);
+        menuTimer.start();
+
         var highFive = sprite.addChild(game.make.sprite(-40, -20, 'five'))
         highFive.inputEnabled = true;
         highFive.input.useHandCursor = true;
-        highFive.events.onInputDown.add(fiver,sprite); 
+        highFive.events.onInputDown.add(fiver, {timer: menuTimer}, sprite); 
 
         var hug = sprite.addChild(game.make.sprite(20, -40, 'hug'))
         hug.inputEnabled = true;
         hug.input.useHandCursor = true;
-        hug.events.onInputDown.add(hugged,this); 
+        hug.events.onInputDown.add(hugged, {timer: menuTimer}, sprite); 
 
         var smile = sprite.addChild(game.make.sprite(80, -20, 'smile'))
         smile.inputEnabled = true;
         smile.input.useHandCursor = true;
-        smile.events.onInputDown.add(smileKid, this);  
-
-
-    //if sprite moves at stopped guy, he starts moving
-    // timer to close menu
+        smile.events.onInputDown.add(smileKid, {timer: menuTimer}, sprite);  
 }
+    
 
 // Close all items in the interaction menu
 function closeMenu(sprite){
     var parent = sprite.parent;
     for(var i = 2; i >= 0; i--){
-        parent.children[i].destroy()
+        parent.children[i].destroy();
     }
+}
+
+// Cancels menu interaction after no interaction
+function cancelMenu(){
+    var sprite = this.yolk;
+    sprite.interacted.transition('interacting_to_static', 'interacting', 'static', changeState);
+    for(var i = 2; i >= 0; i--){
+        sprite.children[i].destroy();
+    }
+    //console.log("aas" + sprite.interacted.currentState)
 }
 
 // FUNCTIONS FOR USER INTERACTION ICONS
@@ -178,12 +198,14 @@ function fiver(sprite, pointer){
     sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
     feelGood(sprite.parent);
     increaseHappiness(sprite.parent);
+    this.timer.running = false;
     closeMenu(sprite);
 }
     // Hug Icon tapped
 function hugged(sprite, pointer){
     sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
     increaseHappiness(sprite.parent);
+    this.timer.running = false;
     closeMenu(sprite);
 }
 
@@ -191,6 +213,7 @@ function hugged(sprite, pointer){
 function smileKid(sprite, pointer){
     sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
     increaseHappiness(sprite.parent);
+    this.timer.running = false;
     closeMenu(sprite);
 }
 
@@ -244,12 +267,12 @@ function lifeCycle(){
         
         // Decay happiness based on birthNumber and rate
         if(yolk.birthNumber >= 2){
-            console.log("Before: " + yolk.happinessScale);
+           // console.log("Before: " + yolk.happinessScale);
             var equation = 11/ (yolk.birthNumber * 7);
             yolk.happinessScale = yolk.happinessScale - equation;
         }
         else if(yolk.birthNumber = 1){
-            console.log(yolk.happinessScale);
+           // console.log(yolk.happinessScale);
             var equation = 11/12;
             yolk.happinessScale = yolk.happinessScale - equation;
         }
@@ -274,8 +297,7 @@ function lifeCycle(){
         {
             yolk.happinessScale = 0;
         }
-
-        console.log("After: " + yolk.happinessScale);
+       // console.log("After: " + yolk.happinessScale);
     });
 }
 
@@ -295,8 +317,7 @@ function gofull() {
 function update() {
     // Adds collisions to all Yolks
     this.game.physics.arcade.collide(yolkWorld);
-    lifeTimer.start();
-    
+
 }
 
 // Render Function
