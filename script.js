@@ -21,8 +21,8 @@ var yolkCounter;
 var numYolks = 50;
 //var yolkTimer;
 
-
-var game = new Phaser.Game(1200, 650, Phaser.AUTO, 'phaser-example', 
+//1620 x 1080. So the program just needs to have a 150 px bar on both sides 
+var game = new Phaser.Game(1620, 1080, Phaser.AUTO, 'phaser-example', 
 { 
     preload: preload, 
     create: create, 
@@ -37,8 +37,9 @@ function preload() {
     game.load.image('smile', 'assets/menu-smile.png');
     game.load.image('hug', 'assets/menu-hug.png');
     game.load.image('five', 'assets/menu-highFive.png');
+    game.load.image("background", "assets/NiyamaFinalBG.png");
 
-    game.stage.backgroundColor = '#2E4057';
+    //game.stage.backgroundColor = '#2E4057';
 }
 
 function create() {
@@ -47,6 +48,10 @@ function create() {
     game.input.addPointer();
     game.input.addPointer();
     game.input.addPointer();
+    game.input.addPointer();
+    game.input.addPointer();
+
+    game.add.sprite(0, 0, "background");
 
     // Add group to the game
     yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
