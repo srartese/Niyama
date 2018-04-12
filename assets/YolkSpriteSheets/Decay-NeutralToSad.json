@@ -1,0 +1,813 @@
+{"frames": [
+
+{
+	"filename": "Decay-NeutralToSad-00.png",
+	"frame": {"x":0,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-01.png",
+	"frame": {"x":108,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-02.png",
+	"frame": {"x":216,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-03.png",
+	"frame": {"x":324,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-04.png",
+	"frame": {"x":432,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-05.png",
+	"frame": {"x":540,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-06.png",
+	"frame": {"x":648,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-07.png",
+	"frame": {"x":756,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-08.png",
+	"frame": {"x":864,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-09.png",
+	"frame": {"x":972,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-10.png",
+	"frame": {"x":1080,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-11.png",
+	"frame": {"x":1188,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-12.png",
+	"frame": {"x":1296,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-13.png",
+	"frame": {"x":1404,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-14.png",
+	"frame": {"x":1512,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-15.png",
+	"frame": {"x":1620,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-16.png",
+	"frame": {"x":1728,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-17.png",
+	"frame": {"x":1836,"y":0,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-18.png",
+	"frame": {"x":0,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-19.png",
+	"frame": {"x":108,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-20.png",
+	"frame": {"x":216,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-21.png",
+	"frame": {"x":324,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-22.png",
+	"frame": {"x":432,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-23.png",
+	"frame": {"x":540,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-24.png",
+	"frame": {"x":648,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-25.png",
+	"frame": {"x":756,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-26.png",
+	"frame": {"x":864,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-27.png",
+	"frame": {"x":972,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-28.png",
+	"frame": {"x":1080,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-29.png",
+	"frame": {"x":1188,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-30.png",
+	"frame": {"x":1296,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-31.png",
+	"frame": {"x":1404,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-32.png",
+	"frame": {"x":1512,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-33.png",
+	"frame": {"x":1620,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-34.png",
+	"frame": {"x":1728,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-35.png",
+	"frame": {"x":1836,"y":158,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-36.png",
+	"frame": {"x":0,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-37.png",
+	"frame": {"x":108,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-38.png",
+	"frame": {"x":216,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-39.png",
+	"frame": {"x":324,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-40.png",
+	"frame": {"x":432,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-41.png",
+	"frame": {"x":540,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-42.png",
+	"frame": {"x":648,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-43.png",
+	"frame": {"x":756,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-44.png",
+	"frame": {"x":864,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-45.png",
+	"frame": {"x":972,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-46.png",
+	"frame": {"x":1080,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-47.png",
+	"frame": {"x":1188,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-48.png",
+	"frame": {"x":1296,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-49.png",
+	"frame": {"x":1404,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-50.png",
+	"frame": {"x":1512,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-51.png",
+	"frame": {"x":1620,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-52.png",
+	"frame": {"x":1728,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-53.png",
+	"frame": {"x":1836,"y":316,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-54.png",
+	"frame": {"x":0,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-55.png",
+	"frame": {"x":108,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-56.png",
+	"frame": {"x":216,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-57.png",
+	"frame": {"x":324,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-58.png",
+	"frame": {"x":432,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-59.png",
+	"frame": {"x":540,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-60.png",
+	"frame": {"x":648,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-61.png",
+	"frame": {"x":756,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-62.png",
+	"frame": {"x":864,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-63.png",
+	"frame": {"x":972,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-64.png",
+	"frame": {"x":1080,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-65.png",
+	"frame": {"x":1188,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-66.png",
+	"frame": {"x":1296,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-67.png",
+	"frame": {"x":1404,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-68.png",
+	"frame": {"x":1512,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-69.png",
+	"frame": {"x":1620,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-70.png",
+	"frame": {"x":1728,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-71.png",
+	"frame": {"x":1836,"y":474,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-72.png",
+	"frame": {"x":0,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-73.png",
+	"frame": {"x":108,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-74.png",
+	"frame": {"x":216,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-75.png",
+	"frame": {"x":324,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-76.png",
+	"frame": {"x":432,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-77.png",
+	"frame": {"x":540,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-78.png",
+	"frame": {"x":648,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-79.png",
+	"frame": {"x":756,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-80.png",
+	"frame": {"x":864,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-81.png",
+	"frame": {"x":972,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-82.png",
+	"frame": {"x":1080,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-83.png",
+	"frame": {"x":1188,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-84.png",
+	"frame": {"x":1296,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-85.png",
+	"frame": {"x":1404,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-86.png",
+	"frame": {"x":1512,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-87.png",
+	"frame": {"x":1620,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Decay-NeutralToSad-88.png",
+	"frame": {"x":1728,"y":632,"w":108,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":158},
+	"sourceSize": {"w":108,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Decay-NeutralToSad.png",
+	"format": "RGBA8888",
+	"size": {"w":1944,"h":790},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e29214ccc033ee4b19b769dd39023726:d57f322c5991f2459749432afc8c457c:b77f1beeb85d3eeff45bddeb2bc92cd6$"
+}
+}

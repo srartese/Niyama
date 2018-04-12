@@ -47,17 +47,18 @@
         this.happinessScale = this.birthNumber;
 
         // Animations for each transition
-        this.animations.add('neutral', [1], 10, false);
-        this.animations.add('neutral_to_sad', [2], 40, false);
-        this.animations.add('neutral_to_happy', [0], 40, false);
+        this.animations.add('neutral', Phaser.ArrayUtils.numberArray(240,479), 60, true);
+        this.animations.add('neutral_to_sad', Phaser.ArrayUtils.numberArray(831,910), 60, false);
+        this.animations.add('neutral_to_happy', Phaser.ArrayUtils.numberArray(1516,1696), 60, false);
        
-        this.animations.add('sad', [2], 35, false);
-        this.animations.add('sad_to_neutral', [1], 40, false);
-        this.animations.add('sad_to_happy', [0], 40, false);
+        this.animations.add('sad', Phaser.ArrayUtils.numberArray(480,719), 60, true);
+        this.animations.add('sad_to_neutral', Phaser.ArrayUtils.numberArray(1697,1877), 60, false);
+        //this.animations.add('sad_to_happy', [0], 40, false);
         
-        this.animations.add('happy', [0], 10, false);
-        this.animations.add('happy_to_sad', [2], 40, false);
-        this.animations.add('happy_to_neutral', [1], 40, false);
+        this.animations.add('happy', Phaser.ArrayUtils.numberArray(0,239), 60, true);
+        //this.animations.add('happy_to_sad', [2], 40, false);
+        this.animations.add('happy_to_neutral', Phaser.ArrayUtils.numberArray(720,830), 60, false);
+
 
         // State Machine for Happiness States
         this.sm = new stateMachine( this, { debug: false } );

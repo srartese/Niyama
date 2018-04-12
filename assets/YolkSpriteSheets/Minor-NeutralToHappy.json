@@ -1,0 +1,1632 @@
+{"frames": [
+
+{
+	"filename": "Minor-NeutralToHappy-000.png",
+	"frame": {"x":0,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-001.png",
+	"frame": {"x":180,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-002.png",
+	"frame": {"x":360,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-003.png",
+	"frame": {"x":540,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-004.png",
+	"frame": {"x":720,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-005.png",
+	"frame": {"x":900,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-006.png",
+	"frame": {"x":1080,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-007.png",
+	"frame": {"x":1260,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-008.png",
+	"frame": {"x":1440,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-009.png",
+	"frame": {"x":1620,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-010.png",
+	"frame": {"x":1800,"y":0,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-011.png",
+	"frame": {"x":0,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-012.png",
+	"frame": {"x":180,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-013.png",
+	"frame": {"x":360,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-014.png",
+	"frame": {"x":540,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-015.png",
+	"frame": {"x":720,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-016.png",
+	"frame": {"x":900,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-017.png",
+	"frame": {"x":1080,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-018.png",
+	"frame": {"x":1260,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-019.png",
+	"frame": {"x":1440,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-020.png",
+	"frame": {"x":1620,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-021.png",
+	"frame": {"x":1800,"y":130,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-022.png",
+	"frame": {"x":0,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-023.png",
+	"frame": {"x":180,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-024.png",
+	"frame": {"x":360,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-025.png",
+	"frame": {"x":540,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-026.png",
+	"frame": {"x":720,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-027.png",
+	"frame": {"x":900,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-028.png",
+	"frame": {"x":1080,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-029.png",
+	"frame": {"x":1260,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-030.png",
+	"frame": {"x":1440,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-031.png",
+	"frame": {"x":1620,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-032.png",
+	"frame": {"x":1800,"y":260,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-033.png",
+	"frame": {"x":0,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-034.png",
+	"frame": {"x":180,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-035.png",
+	"frame": {"x":360,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-036.png",
+	"frame": {"x":540,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-037.png",
+	"frame": {"x":720,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-038.png",
+	"frame": {"x":900,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-039.png",
+	"frame": {"x":1080,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-040.png",
+	"frame": {"x":1260,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-041.png",
+	"frame": {"x":1440,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-042.png",
+	"frame": {"x":1620,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-043.png",
+	"frame": {"x":1800,"y":390,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-044.png",
+	"frame": {"x":0,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-045.png",
+	"frame": {"x":180,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-046.png",
+	"frame": {"x":360,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-047.png",
+	"frame": {"x":540,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-048.png",
+	"frame": {"x":720,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-049.png",
+	"frame": {"x":900,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-050.png",
+	"frame": {"x":1080,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-051.png",
+	"frame": {"x":1260,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-052.png",
+	"frame": {"x":1440,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-053.png",
+	"frame": {"x":1620,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-054.png",
+	"frame": {"x":1800,"y":520,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-055.png",
+	"frame": {"x":0,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-056.png",
+	"frame": {"x":180,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-057.png",
+	"frame": {"x":360,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-058.png",
+	"frame": {"x":540,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-059.png",
+	"frame": {"x":720,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-060.png",
+	"frame": {"x":900,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-061.png",
+	"frame": {"x":1080,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-062.png",
+	"frame": {"x":1260,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-063.png",
+	"frame": {"x":1440,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-064.png",
+	"frame": {"x":1620,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-065.png",
+	"frame": {"x":1800,"y":650,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-066.png",
+	"frame": {"x":0,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-067.png",
+	"frame": {"x":180,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-068.png",
+	"frame": {"x":360,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-069.png",
+	"frame": {"x":540,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-070.png",
+	"frame": {"x":720,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-071.png",
+	"frame": {"x":900,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-072.png",
+	"frame": {"x":1080,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-073.png",
+	"frame": {"x":1260,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-074.png",
+	"frame": {"x":1440,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-075.png",
+	"frame": {"x":1620,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-076.png",
+	"frame": {"x":1800,"y":780,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-077.png",
+	"frame": {"x":0,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-078.png",
+	"frame": {"x":180,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-079.png",
+	"frame": {"x":360,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-080.png",
+	"frame": {"x":540,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-081.png",
+	"frame": {"x":720,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-082.png",
+	"frame": {"x":900,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-083.png",
+	"frame": {"x":1080,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-084.png",
+	"frame": {"x":1260,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-085.png",
+	"frame": {"x":1440,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-086.png",
+	"frame": {"x":1620,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-087.png",
+	"frame": {"x":1800,"y":910,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-088.png",
+	"frame": {"x":0,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-089.png",
+	"frame": {"x":180,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-090.png",
+	"frame": {"x":360,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-091.png",
+	"frame": {"x":540,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-092.png",
+	"frame": {"x":720,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-093.png",
+	"frame": {"x":900,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-094.png",
+	"frame": {"x":1080,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-095.png",
+	"frame": {"x":1260,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-096.png",
+	"frame": {"x":1440,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-097.png",
+	"frame": {"x":1620,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-098.png",
+	"frame": {"x":1800,"y":1040,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-099.png",
+	"frame": {"x":0,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-100.png",
+	"frame": {"x":180,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-101.png",
+	"frame": {"x":360,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-102.png",
+	"frame": {"x":540,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-103.png",
+	"frame": {"x":720,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-104.png",
+	"frame": {"x":900,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-105.png",
+	"frame": {"x":1080,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-106.png",
+	"frame": {"x":1260,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-107.png",
+	"frame": {"x":1440,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-108.png",
+	"frame": {"x":1620,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-109.png",
+	"frame": {"x":1800,"y":1170,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-110.png",
+	"frame": {"x":0,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-111.png",
+	"frame": {"x":180,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-112.png",
+	"frame": {"x":360,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-113.png",
+	"frame": {"x":540,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-114.png",
+	"frame": {"x":720,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-115.png",
+	"frame": {"x":900,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-116.png",
+	"frame": {"x":1080,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-117.png",
+	"frame": {"x":1260,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-118.png",
+	"frame": {"x":1440,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-119.png",
+	"frame": {"x":1620,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-120.png",
+	"frame": {"x":1800,"y":1300,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-121.png",
+	"frame": {"x":0,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-122.png",
+	"frame": {"x":180,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-123.png",
+	"frame": {"x":360,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-124.png",
+	"frame": {"x":540,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-125.png",
+	"frame": {"x":720,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-126.png",
+	"frame": {"x":900,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-127.png",
+	"frame": {"x":1080,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-128.png",
+	"frame": {"x":1260,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-129.png",
+	"frame": {"x":1440,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-130.png",
+	"frame": {"x":1620,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-131.png",
+	"frame": {"x":1800,"y":1430,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-132.png",
+	"frame": {"x":0,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-133.png",
+	"frame": {"x":180,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-134.png",
+	"frame": {"x":360,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-135.png",
+	"frame": {"x":540,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-136.png",
+	"frame": {"x":720,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-137.png",
+	"frame": {"x":900,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-138.png",
+	"frame": {"x":1080,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-139.png",
+	"frame": {"x":1260,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-140.png",
+	"frame": {"x":1440,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-141.png",
+	"frame": {"x":1620,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-142.png",
+	"frame": {"x":1800,"y":1560,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-143.png",
+	"frame": {"x":0,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-144.png",
+	"frame": {"x":180,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-145.png",
+	"frame": {"x":360,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-146.png",
+	"frame": {"x":540,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-147.png",
+	"frame": {"x":720,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-148.png",
+	"frame": {"x":900,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-149.png",
+	"frame": {"x":1080,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-150.png",
+	"frame": {"x":1260,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-151.png",
+	"frame": {"x":1440,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-152.png",
+	"frame": {"x":1620,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-153.png",
+	"frame": {"x":1800,"y":1690,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-154.png",
+	"frame": {"x":0,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-155.png",
+	"frame": {"x":180,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-156.png",
+	"frame": {"x":360,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-157.png",
+	"frame": {"x":540,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-158.png",
+	"frame": {"x":720,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-159.png",
+	"frame": {"x":900,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-160.png",
+	"frame": {"x":1080,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-161.png",
+	"frame": {"x":1260,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-162.png",
+	"frame": {"x":1440,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-163.png",
+	"frame": {"x":1620,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-164.png",
+	"frame": {"x":1800,"y":1820,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-165.png",
+	"frame": {"x":0,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-166.png",
+	"frame": {"x":180,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-167.png",
+	"frame": {"x":360,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-168.png",
+	"frame": {"x":540,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-169.png",
+	"frame": {"x":720,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-170.png",
+	"frame": {"x":900,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-171.png",
+	"frame": {"x":1080,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-172.png",
+	"frame": {"x":1260,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-173.png",
+	"frame": {"x":1440,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-174.png",
+	"frame": {"x":1620,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-175.png",
+	"frame": {"x":1800,"y":1950,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-176.png",
+	"frame": {"x":0,"y":2080,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-177.png",
+	"frame": {"x":180,"y":2080,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-178.png",
+	"frame": {"x":360,"y":2080,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Minor-NeutralToHappy-179.png",
+	"frame": {"x":540,"y":2080,"w":180,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":130},
+	"sourceSize": {"w":180,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Minor-NeutralToHappy.png",
+	"format": "RGBA8888",
+	"size": {"w":1980,"h":2210},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ad6c13c2963dc16f75e65514de06d718:a65f10b41b7ec2c0b54cc1617b97470b:555c9d4c6792e6fe318941bcb9973d6e$"
+}
+}
