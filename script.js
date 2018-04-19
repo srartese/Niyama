@@ -18,7 +18,7 @@ var allYolks = [];
 var childYolk;
 var interactions;
 var yolkCounter;
-var numYolks = 5;
+var numYolks = 25;
 //var yolkTimer;
 
 //1620 x 1080. So the program just needs to have a 150 px bar on both sides 3840, 2560, 
@@ -46,6 +46,9 @@ function create() {
     //disable right click
     game.canvas.oncontextmenu = function (e) { e.preventDefault(); }
 
+    //start physics
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
     //Multi-touch functions... up to 10 touches
     game.input.addPointer();
     game.input.addPointer();
@@ -60,8 +63,6 @@ function create() {
 
     // Add group to the game
     yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
-
-    //this.rect = new Phaser.Rectangle(50, 50, 1100, 600);
 
     interactions = 0;
     yolkCounter = 0;
@@ -103,6 +104,7 @@ function addYolk(){
     childYolk.input.useHandCursor = true;
     childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });
     childYolk.anchor.setTo(0.5, 0.5);
+    game.physics.enable(childYolk, Phaser.Physics.ARCADE);
 
     //random variable for colision boxes
     childYolk.body.setCircle(30,  (-35 + 0.5 * childYolk.width  / childYolk.scale.x),
@@ -139,13 +141,11 @@ function iTapped(sprite, pointer, happiness) {
     // console.log("ID: " + this.id);
     console.log(sprite.interacted.currentState)
 
-
     if(sprite.sm.currentState == "sad"){
         sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
         if (sprite.body.checkCollision.none  == false){
             sprite.body.checkCollision.none  = true
         }
-       // sprite.bringToTop();
            if(sprite.interacted.currentState == "static"){
             sprite.sm.transition('tapped', 'sad', 'major_tapped', changeState);
                 sprite.interacted.transition('static_to_interacting', 'static', 'interacting', changeState);
@@ -158,9 +158,9 @@ function iTapped(sprite, pointer, happiness) {
         sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
         console.log("BURST");
         interactions++;
-        sprite.happinessScale = sprite.happinessScale + 3;
+        sprite.happinessScale = 10;
         console.log(sprite.happinessScale);
-        checkState(sprite);
+        //checkState(sprite);
     }
 
     if(sprite.sm.currentState == "happy"){
@@ -172,13 +172,11 @@ function iTapped(sprite, pointer, happiness) {
             sprite.happinessScale = sprite.happinessScale;
 
         console.log(sprite.happinessScale);
-        checkState(sprite);
      }
 }
 
 
 function makeHappy(sprite, id, happiness){
-
     //chose random action of the 3 and continue forwards
     var chance = game.rnd.integerInRange(0, 2);
     switch(chance){
@@ -194,74 +192,47 @@ function makeHappy(sprite, id, happiness){
         default:
             break;
     }
-    game.time.events.add(2000, function () {
+    game.time.events.add(4000, function () {
         joinHappy(sprite);
     });
 }
 
 
 function joinHappy(sprite){
-    //move to happy 
-    //increase happiness
     increaseHappiness(sprite); 
-    //inspire state
-    console.log("normal")
+    sprite.ripple.start();
     sprite.interacted.transition('interacting_to_inspired', 'interacting', 'inspired', changeState);
-   
+    game.physics.arcade.moveToXY(sprite, game.rnd.integerInRange(50, sprite.x), 50, 50);
+ 
 }
 
-// Brings he yolk back to normal and stops the ripple effect
-function normalizeIt(sprite){
-    console.log("animation ");
+// Brings the yolk back to normal and stops the ripple effect
+function normalizeIt(){
     //After the state is chosen, choose which animation to show inorder to prep for rising state
-    switch(sprite.sm.currentState){
+    switch(this.sm.currentState){
         case 'major_hugged':            
-            sprite.sm.transition('rising_happy', 'major_hug', 'rising_to_happy', changeState);
+            this.sm.transition('rising_happy', 'major_hug', 'rising_to_happy', changeState);
             break;
         case 'major_smile':
-            sprite.sm.transition('rising_happy', 'major_smile', 'rising_to_happy', changeState);
+            this.sm.transition('rising_happy', 'major_smile', 'rising_to_happy', changeState);
             break;
         case 'major_highFive':
-           sprite.sm.transition('rising_happy', 'major_highFive', 'rising_to_happy', changeState);
+           this.sm.transition('rising_happy', 'major_highFive', 'rising_to_happy', changeState);
             break;
         default:
             break;
     }
-    sprite.interacted.transition('inspired_to_static', 'inspired', 'static', changeState );
-    sprite.sm.transition('normal', 'rising_to_happy', 'happy', changeState);
-    
-    sprite.ripple.remove();
+    this.interacted.transition('inspired_to_static', 'inspired', 'static', changeState );
+    this.ripple.remove();
+
+    switch(this.sm.currentState){
+        case 'rising_to_happy':
+            this.sm.transition('normal', 'rising_to_happy', 'happy', changeState);
+            break;
+        default:
+        break;
+    }
 }
-
-
-// FUNCTIONS FOR USER INTERACTION ICONS
-    // High Five Icon tapped
-function fiver(sprite, pointer){
-    sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
-    feelGood(sprite.parent);
-    increaseHappiness(sprite.parent);
-    this.timer.running = false;
-    closeMenu(sprite);
-}
-    // Hug Icon tapped
-function hugged(sprite, pointer){
-    sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
-    increaseHappiness(sprite.parent);
-    this.timer.running = false;
-    closeMenu(sprite);
-}
-
-    // Smile Icon tapped
-function smileKid(sprite, pointer){
-    sprite.parent.sm.transition('sad_to_happy', 'sad', 'happy', changeState);
-    increaseHappiness(sprite.parent);
-    this.timer.running = false;
-    closeMenu(sprite);
-}
-
-
-//decay rate to up 6 
-
 
 // Increase happiness from interaction states
 function increaseHappiness(sprite){
@@ -277,33 +248,12 @@ function increaseHappiness(sprite){
         console.log(interactions);
 }
 
-
-// If happiness is more than 6, the animation and state should change to match
-function checkState(sprite){
-    if(sprite.happinessScale > 6)
-        sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState);
-
-}
-
 // Predicate function used for transition
 function changeState()
 {
     return childYolk.sm.initialState == "sad";
 }
 
-
-
-function feelGood(sprite){ // Deals with the change when interacted with
-    sprite.interacted.transition('interacting_to_inspired', 'interacting', 'inspired', changeState );
-    console.log("inspired " + sprite.interacted.currentState)
-    console.log(sprite)
-    
-    // Start timer
-    sprite.ripple.start();
-   // sprite.moveToXY(sprite, 100, 100); 
-    //sprite.moveTo(sprite, 100, 200);
-    // Start ripple effect interaction - once movement programed in
-}
 
 // When Yolk created start happiness decay over time
 function lifeCycle(){
@@ -366,9 +316,15 @@ function collisionHandler(yolk1, yolk2){
     if(positiveInteraction == 50)
     {
         // Increase happinessScale for both yolks
-        yolk1.happinessScale = yolk1.happinessScale + 1;
-        yolk2.happinessScale = yolk1.happinessScale + 1;
+        yolk1.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
+        yolk2.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
+        yolk1.happinessScale = yolk1.happinessScale + 2;
+        yolk2.happinessScale = yolk1.happinessScale + 2;
     }
+}
+
+function yolkSpeed(){
+    
 }
 
 //Check Movement
