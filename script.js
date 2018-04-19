@@ -35,7 +35,6 @@ function preload() {
 
     // Load sprite sheet and map to Json File   
     game.load.atlas('yolky', 'assets/Everything.png', 'assets/Everything.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
-
     game.load.image('smile', 'assets/menu-smile.png');
     game.load.image('hug', 'assets/menu-hug.png');
     game.load.image('five', 'assets/menu-highFive.png');
@@ -43,6 +42,9 @@ function preload() {
 }
 
 function create() {
+
+    //disable right click
+    game.canvas.oncontextmenu = function (e) { e.preventDefault(); }
 
     //Multi-touch functions... up to 10 touches
     game.input.addPointer();
@@ -95,23 +97,21 @@ function create() {
 
 //Adds the yolk into the world at start delay
 function addYolk(){
+
     childYolk = yolkWorld.add(new Yolk(game, allYolks[yolkCounter], game.rnd.integerInRange(0, 10)));
     childYolk.inputEnabled = true;
     childYolk.input.useHandCursor = true;
     childYolk.events.onInputDown.add(iTapped,{happiness: childYolk.myHappiness(),id: childYolk.myID() });
-    
+    childYolk.anchor.setTo(0.5, 0.5);
+
     //random variable for colision boxes
-    childYolk.body.setCircle(35,  (-35 + 0.5 * childYolk.width  / childYolk.scale.x),
+    childYolk.body.setCircle(30,  (-35 + 0.5 * childYolk.width  / childYolk.scale.x),
     (-35 + 0.5 * childYolk.height / childYolk.scale.y)
 )
-;
-    if( Math.random() < 0.2)
+    if( Math.random() < 0.1)
     {
        childYolk.body.checkCollision.none  = true;
     }
-   
-    //gravity for sad
-    //sadder the 
 
     // Movement speed based on birthNumber
     if(childYolk.myHappiness() <= 3){
@@ -123,21 +123,13 @@ function addYolk(){
     else
          childYolk.body.velocity.set(game.rnd.integerInRange(-50, 50), game.rnd.integerInRange(-50, 50)); 
 
-    //yolkWorld.alignIn(this.rect, Phaser.RIGHT_CENTER);
-
-    // Yolks cannot leave the square assigned as the world
-
     yolkWorld.setAll('body.collideWorldBounds', true);
     yolkWorld.setAll('body.bounce.x', 1);
     yolkWorld.setAll('body.bounce.y', 1);
 
-    //SEE BOUNDING BOX
-   // game.debug.body(childYolk);
-
     // Give each yolk the proper number from what would be in a loop     
     yolkCounter++
 }
-
 
 
 // When Yolk is interacted with
@@ -147,23 +139,23 @@ function iTapped(sprite, pointer, happiness) {
     // console.log("ID: " + this.id);
     console.log(sprite.interacted.currentState)
 
+
     if(sprite.sm.currentState == "sad"){
         sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
         if (sprite.body.checkCollision.none  == false){
             sprite.body.checkCollision.none  = true
         }
-
-        sprite.bringToTop();
-        // sprite.sm.transition('sad_to_neutral', 'sad', 'neutral', changeState ); 
+       // sprite.bringToTop();
            if(sprite.interacted.currentState == "static"){
+            sprite.sm.transition('tapped', 'sad', 'major_tapped', changeState);
                 sprite.interacted.transition('static_to_interacting', 'static', 'interacting', changeState);
-                showMenu(sprite, this.id, this.happiness);
+                makeHappy(sprite, this.id, this.happiness);
            }
            else
             console.log("its already interacting");
     }
     if(sprite.sm.currentState == "neutral"){
-        //sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
+        sprite.sm.transition('neutral_to_happy', 'neutral', 'happy', changeState );
         console.log("BURST");
         interactions++;
         sprite.happinessScale = sprite.happinessScale + 3;
@@ -185,51 +177,61 @@ function iTapped(sprite, pointer, happiness) {
 }
 
 
+function makeHappy(sprite, id, happiness){
 
-// Display menu with icon items and touch events
-function showMenu(sprite, menuid, happiness){
-      // Closes out menu after no interaction
-        var menuTimer = game.time.create(false);
-        menuTimer.add(5000, cancelMenu,{yolk: sprite}, this);
-        menuTimer.start();
-
-        var highFive = sprite.addChild(game.make.sprite(-40, -20, 'five'))
-        highFive.inputEnabled = true;
-        highFive.input.useHandCursor = true;
-        highFive.events.onInputDown.add(fiver, {timer: menuTimer}, sprite); 
-
-        var hug = sprite.addChild(game.make.sprite(20, -40, 'hug'))
-        hug.inputEnabled = true;
-        hug.input.useHandCursor = true;
-        hug.events.onInputDown.add(hugged, {timer: menuTimer}, sprite); 
-
-        var smile = sprite.addChild(game.make.sprite(80, -20, 'smile'))
-        smile.inputEnabled = true;
-        smile.input.useHandCursor = true;
-        smile.events.onInputDown.add(smileKid, {timer: menuTimer}, sprite);  
+    //chose random action of the 3 and continue forwards
+    var chance = game.rnd.integerInRange(0, 2);
+    switch(chance){
+        case 0:            
+           sprite.sm.transition('hugged', 'major_tapped', 'major_hug', changeState);
+            break;
+        case 1:
+            sprite.sm.transition('smiled', 'major_tapped', 'major_smile', changeState);
+            break;
+        case 2:
+            sprite.sm.transition('highFived', 'major_tapped', 'major_highFive', changeState);
+            break;
+        default:
+            break;
+    }
+    game.time.events.add(2000, function () {
+        joinHappy(sprite);
+    });
 }
+
+
+function joinHappy(sprite){
+    //move to happy 
+    //increase happiness
+    increaseHappiness(sprite); 
+    //inspire state
+    console.log("normal")
+    sprite.interacted.transition('interacting_to_inspired', 'interacting', 'inspired', changeState);
+   
+}
+
+// Brings he yolk back to normal and stops the ripple effect
+function normalizeIt(sprite){
+    console.log("animation ");
+    //After the state is chosen, choose which animation to show inorder to prep for rising state
+    switch(sprite.sm.currentState){
+        case 'major_hugged':            
+            sprite.sm.transition('rising_happy', 'major_hug', 'rising_to_happy', changeState);
+            break;
+        case 'major_smile':
+            sprite.sm.transition('rising_happy', 'major_smile', 'rising_to_happy', changeState);
+            break;
+        case 'major_highFive':
+           sprite.sm.transition('rising_happy', 'major_highFive', 'rising_to_happy', changeState);
+            break;
+        default:
+            break;
+    }
+    sprite.interacted.transition('inspired_to_static', 'inspired', 'static', changeState );
+    sprite.sm.transition('normal', 'rising_to_happy', 'happy', changeState);
     
-
-// Close all items in the interaction menu
-function closeMenu(sprite){
-    var parent = sprite.parent;
-    for(var i = 2; i >= 0; i--){
-        parent.children[i].destroy();
-    }
+    sprite.ripple.remove();
 }
-
-
-
-// Cancels menu interaction after no interaction
-function cancelMenu(){
-    var sprite = this.yolk;
-    sprite.interacted.transition('interacting_to_static', 'interacting', 'static', changeState);
-    for(var i = 2; i >= 0; i--){
-        sprite.children[i].destroy();
-    }
-    //console.log("aas" + sprite.interacted.currentState)
-}
-
 
 
 // FUNCTIONS FOR USER INTERACTION ICONS
@@ -258,12 +260,15 @@ function smileKid(sprite, pointer){
 }
 
 
+//decay rate to up 6 
+
 
 // Increase happiness from interaction states
 function increaseHappiness(sprite){
     //If interacting with Sad yolk, always made happy. 
-    sprite.happinessScale = sprite.happinessScale + 7;
-
+   // sprite.happinessScale = sprite.happinessScale + 7;
+   console.log(sprite)
+   sprite.happinessScale = 10;
     //If adding goes about max happiness 10, keep at 10
     if(sprite.happinessScale >= 10)
         sprite.happinessScale = 10;
@@ -295,20 +300,10 @@ function feelGood(sprite){ // Deals with the change when interacted with
     
     // Start timer
     sprite.ripple.start();
-
+   // sprite.moveToXY(sprite, 100, 100); 
+    //sprite.moveTo(sprite, 100, 200);
     // Start ripple effect interaction - once movement programed in
 }
-
-
-
-// Brings he yolk back to normal and stops the ripple effect
-function normalizeIt(){
-    console.log("DONE RIPPLING");
-    this.interacted.transition('inspired_to_static', 'inspired', 'static', changeState );
-    this.ripple.remove();
-}
-
-
 
 // When Yolk created start happiness decay over time
 function lifeCycle(){
@@ -332,22 +327,15 @@ function lifeCycle(){
         }
 
         //Check happiness to change state and animation
-        if(yolk.happinessScale < 7 && yolk.happinessScale > 3)
+        if(yolk.happinessScale < 6 && yolk.happinessScale > 3)
         {
-            yolk.sm.transition('happy_to_neutral', 'happy', 'neutral', changeState);
-            //yolk.loadTexture('happy_neutral', 0);
-            // yolk.animations.add('happy_to_neutral');
-            // yolk.animations.currentAnim.onComplete.add(function () {	console.log('animation complete');}, this);
-            // yolk.animations.play('happy_to_neutral');
-
-
-           // yolk.sm.currentState = "neutral";
-
+           // if(yolk.happinessScale > 3){
+                yolk.sm.transition('happy_to_neutral', 'happy', 'neutral', changeState);
+            //}
         }
         else if(yolk.happinessScale < 3)
         {
             yolk.sm.transition('neutral_to_sad', 'neutral', 'sad', changeState);
-
         }
 
         // When happiness = 0 stop decay
@@ -381,23 +369,43 @@ function collisionHandler(yolk1, yolk2){
         yolk1.happinessScale = yolk1.happinessScale + 1;
         yolk2.happinessScale = yolk1.happinessScale + 1;
     }
-    // // 1/100 chance its negative
-    // else if (positiveInteraction == 25){
-    //     // Decrease happinessScale for both yolks
-    //     yolk1.happinessScale = yolk1.happinessScale - 2;
-    //     yolk2.happinessScale = yolk1.happinessScale - 2;
-    // }
-    
 }
+
+//Check Movement
+function yolkMovement(){
+    //check each y location of each yolk
+    //if state == sad and y location > 3/5
+    // if state == neutral and y location < 3/5  && > 4/5
+    //if state == happy and y loc < 4/5
+    //[1 2 [3] [4] 5]
+    // 0
+    // 216 
+    // 432
+    // 648
+    // 1020
+    yolkWorld.forEach(function(yolk) {
+        if (yolk.sm.currentState == "sad" && yolk.y < 648 ) {
+            yLoc = game.rnd.integerInRange(648,1070);
+            console.log("yolk.y");
+        }  
+        else 
+        yLoc = game.rnd.integerInRange(0,648);
+        
+    });
+
+}
+
 // Update Function
 function update() {
     // Adds collisions to all Yolks
     this.game.physics.arcade.collide(yolkWorld, yolkWorld, collisionHandler, null, this);
+   // yolkMovement();
 }
 
 // Render Function
 function render () { 
-    game.debug.body(childYolk);
+    //game.debug.body(childYolk);
+    console.log(childYolk.happinessScale);
 }
 
      
