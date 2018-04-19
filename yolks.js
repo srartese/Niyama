@@ -17,14 +17,14 @@
         var yLoc;
         if( this.birthNumber <= 3)
         {
-            yLoc = game.rnd.integerInRange(350,600);
+            yLoc = game.rnd.integerInRange(648,1070);
         }
         else if (this.birthNumber > 3 && this.birthNumber < 6)
         {
-            yLoc = game.rnd.integerInRange(200, 400);
+            yLoc = game.rnd.integerInRange(432, 648);
         }
         else
-            yLoc = game.rnd.integerInRange(0, 250);
+            yLoc = game.rnd.integerInRange(20, 432);
 
         
         // Create a decayTime for each yolk based on the birthNumber
@@ -47,18 +47,24 @@
         this.happinessScale = this.birthNumber;
 
         // Animations for each transition
-        this.animations.add('neutral', Phaser.ArrayUtils.numberArray(240,479), 60, true);
-        this.animations.add('neutral_to_sad', Phaser.ArrayUtils.numberArray(831,910), 60, false);
-        this.animations.add('neutral_to_happy', Phaser.ArrayUtils.numberArray(1516,1696), 60, false);
+        this.animations.add('neutral', Phaser.ArrayUtils.numberArray(240,479), 60, true); // 240-479
+        this.animations.add('neutral_to_sad', Phaser.ArrayUtils.numberArray(830,918), 60, false); //830-918
+        this.animations.add('neutral_to_happy', Phaser.ArrayUtils.numberArray(1529,1708), 60, false); //1529-1708 
        
-        this.animations.add('sad', Phaser.ArrayUtils.numberArray(480,719), 60, true);
-        this.animations.add('sad_to_neutral', Phaser.ArrayUtils.numberArray(1697,1877), 60, false);
-        //this.animations.add('sad_to_happy', [0], 40, false);
+        this.animations.add('sad', Phaser.ArrayUtils.numberArray(480,719), 60, true); //480-719
+        this.animations.add('sad_to_neutral', Phaser.ArrayUtils.numberArray(1709,1888), 60, false); //1709-1888
         
-        this.animations.add('happy', Phaser.ArrayUtils.numberArray(0,239), 60, true);
-        //this.animations.add('happy_to_sad', [2], 40, false);
-        this.animations.add('happy_to_neutral', Phaser.ArrayUtils.numberArray(720,830), 60, false);
+        this.animations.add('happy', Phaser.ArrayUtils.numberArray(0,239), 60, true); // 0-239
+        this.animations.add('happy_to_neutral', Phaser.ArrayUtils.numberArray(720,829), 60, false); //720-829
 
+        // Interactions
+        this.animations.add('major_tapped', Phaser.ArrayUtils.numberArray(1501,1528), 60, false) //1501-1528
+        this.animations.add('major_hug', Phaser.ArrayUtils.numberArray(1153,1326), 60, false); //1153-1326 
+        this.animations.add('major_smile', Phaser.ArrayUtils.numberArray(1327,1500), 60, false); //1327-1500
+        this.animations.add('major_highFive', Phaser.ArrayUtils.numberArray(979,1152), 60, false); //979-1152
+
+        this.animations.add('rising_to_happy', Phaser.ArrayUtils.numberArray(919,978), 60, false); //919-978
+      
 
         // State Machine for Happiness States
         this.sm = new stateMachine( this, { debug: false } );
@@ -81,7 +87,38 @@
             update: function(){ },
             exit:   function(){ }
         }); 
+
+        this.sm.state('major_hug', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
        
+        this.sm.state('major_smile', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+        this.sm.state('major_highFive', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+        this.sm.state('major_tapped', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+        this.sm.state('rising_to_happy', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+
         if(this.happinessScale >= 4 && this.happinessScale <= 6)
         this.sm.initialState = "neutral";
         if(this.happinessScale <= 3)
