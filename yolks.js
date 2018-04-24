@@ -48,22 +48,24 @@
 
         // Animations for each transition
         this.animations.add('neutral', Phaser.ArrayUtils.numberArray(240,479), 60, true); // 240-479
-        this.animations.add('neutral_to_sad', Phaser.ArrayUtils.numberArray(830,918), 60, false); //830-918
-        this.animations.add('neutral_to_happy', Phaser.ArrayUtils.numberArray(1529,1708), 60, false); //1529-1708 
+        this.animations.add('neutral_to_sad', Phaser.ArrayUtils.numberArray(830,918), 60, false); // 830-918
+        this.animations.add('neutral_to_happy', Phaser.ArrayUtils.numberArray(1832,2011), 60, false); // 1832-2011
        
-        this.animations.add('sad', Phaser.ArrayUtils.numberArray(480,719), 60, true); //480-719
-        this.animations.add('sad_to_neutral', Phaser.ArrayUtils.numberArray(1709,1888), 60, false); //1709-1888
+        this.animations.add('sad', Phaser.ArrayUtils.numberArray(480,719), 60, true); // 480-719
+        this.animations.add('sad_to_neutral', Phaser.ArrayUtils.numberArray(2012,2191), 60, false); // 2012-2191
         
-        this.animations.add('happy', Phaser.ArrayUtils.numberArray(0,239), 60, true); // 0-239
-        this.animations.add('happy_to_neutral', Phaser.ArrayUtils.numberArray(720,829), 60, false); //720-829
+        this.animations.add('happy', Phaser.ArrayUtils.numberArray(0,239), 60, true); // 000-239
+        this.animations.add('happy_to_neutral', Phaser.ArrayUtils.numberArray(720,829), 60, false); // 720-829
 
         // Interactions
-        this.animations.add('major_tapped', Phaser.ArrayUtils.numberArray(1501,1528), 60, false) //1501-1528
-        this.animations.add('major_hug', Phaser.ArrayUtils.numberArray(1153,1326), 60, false); //1153-1326 
-        this.animations.add('major_smile', Phaser.ArrayUtils.numberArray(1327,1500), 60, false); //1327-1500
-        this.animations.add('major_highFive', Phaser.ArrayUtils.numberArray(979,1152), 60, false); //979-1152
+        this.animations.add('major_tapped', Phaser.ArrayUtils.numberArray(1804,1831), 60, false) // 1804-1831
+        this.animations.add('major_hug', Phaser.ArrayUtils.numberArray(1244,1417), 60, false); // 1244-1417
+        this.animations.add('major_smile', Phaser.ArrayUtils.numberArray(1630,1803), 60, false); // 1630-1803
+        this.animations.add('major_highFive', Phaser.ArrayUtils.numberArray(1070,1243), 60, false); // 1070-1243
+        this.animations.add('major_happy', Phaser.ArrayUtils.numberArray(979,1069), 60, false); // 979-1069
+        this.animations.add('major_neutral', Phaser.ArrayUtils.numberArray(1418,1629), 60, false); // 1418-1629
 
-        this.animations.add('rising_to_happy', Phaser.ArrayUtils.numberArray(919,978), 60, false); //919-978
+        this.animations.add('rising_to_happy', Phaser.ArrayUtils.numberArray(919,978), 60, false); // 919-978
       
 
         // State Machine for Happiness States
@@ -113,6 +115,18 @@
         }); 
 
         this.sm.state('rising_to_happy', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+        this.sm.state('major_happy', {
+            enter:  function(){ },
+            update: function(){ },
+            exit:   function(){ }
+        }); 
+
+        this.sm.state('major_neutral', {
             enter:  function(){ },
             update: function(){ },
             exit:   function(){ }
