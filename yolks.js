@@ -10,8 +10,8 @@
         this.birthNumber = birth;
 
         //  Set a TimerEvent to occur for 2 seconds for ripple effect
-        this.ripple = game.time.create(false);
-        this.ripple.add(6000, normalizeIt,this);
+       // this.ripple = game.time.create(false);
+        //this.ripple.add(7000, normalizeIt,this);
 
         // Spawn all yolks in the proper Y location
         var yLoc;
