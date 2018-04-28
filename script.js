@@ -18,7 +18,7 @@ var childYolk;
 var interactions;
 var rippleEffected;
 var yolkCounter;
-var numYolks = 10;
+var numYolks = 120;
 //var yolkTimer;
 
 //1620 x 1080. So the program just needs to have a 150 px bar on both sides 3840, 2560, 
@@ -62,7 +62,7 @@ function create() {
     yolkWorld = game.add.physicsGroup(Phaser.Physics.ARCADE)
 
     interactions = sessionStorage.getItem('interactions');
-    rippleEffected = localStorage.getItem('ripples');
+    rippleEffected = sessionStorage.getItem('rippleEffected');
     yolkCounter = 0;
 
     lifeTimer = game.time.create(false);
@@ -146,7 +146,7 @@ function addYolk(){
 
 // When Yolk is interacted with
 function iTapped(sprite, pointer, happiness) {
-    console.log("Happiness: " + sprite.happinessScale);
+    // console.log("Happiness: " + sprite.happinessScale);
     console.log(sprite.interacted.currentState)
     console.log(sprite.sm.currentState)
     
@@ -176,13 +176,9 @@ function iTapped(sprite, pointer, happiness) {
 
     // HAPPY YOLK TAPPED
     if(sprite.sm.currentState == "happy"){
-        sprite.inputEnabled = false;
+      
         sprite.sm.transition('major_happy', 'happy', 'major_happy', changeState );
-        
-        game.time.events.add(4000, function () {
-            majorInteraction(sprite);
-        });
-
+    
         interactions++;
 
         if (sprite.happinessScale < 10)
@@ -190,22 +186,24 @@ function iTapped(sprite, pointer, happiness) {
         else 
             sprite.happinessScale = 10;
      }
-     
+      
+     game.time.events.add(4000, function () {
+        majorInteraction(sprite);
+    });
+
 }
 
 function majorInteraction(sprite){
-    console.log(sprite.sm.currentState)
     switch(sprite.sm.currentState){
         case 'major_neutral':
             sprite.sm.currentState = 'happy';
             break;
         case 'major_happy':
             sprite.sm.transition('happy', 'major_happy', 'happy', changeState );
-            sprite.inputEnabled = true;
             break;
         default:
         break;
-    }
+    }   
 }
 
 
@@ -248,39 +246,83 @@ function joinHappy(sprite){
 }
 
 function rippleEffect(sprite, rippled){
+
+    var rippleNum = game.rnd.integerInRange(0, 10);
+
+
      if(sprite.interacted.currentState == "inspired"){
-         var state = sprite.sm.currentState;
+        if(rippleNum < 1){
+            rippleEffected++;
+         var state = rippled.sm.currentState;
          switch (state){
              case 'happy':
-                console.log("hhh");
-                //sprite.sm.transition('insired', 'happy', 'major_happy', changeState);
+             //console.log("hhhhh");
+             rippled.happinessScale++;
+             rippled.sm.transition('inspireH', 'happy', 'major_happy', changeState);
+             unRippled(rippled);
                 break;
             case 'neutral':
-                console.log("hhnnnnh");
-                //sprite.sm.transition('insired', 'neutral', 'major_neutral', changeState);
+           // console.log("nnnnn");
+            rippled.happinessScale++;
+            rippled.sm.transition('inspireN', 'neutral', 'major_neutral', changeState);
+            unRippled(rippled);
                 break;
             case 'sad':
+               // console.log("ssssss");
+                rippled.happinessScale++;
+                break;
+            default:
                 break;
          }
+        }
      }
-     
-     
+    
      if(rippled.interacted.currentState == "inspired")
     {
-        var state2 = rippled.sm.currentState;
+        var state2 = sprite.sm.currentState;
+        if(rippleNum < 4){
+            rippleEffected++;
         switch (state2){
             case 'happy':
+            //console.log("h2");
+            sprite.happinessScale++;
+            sprite.sm.transition('insired', 'happy', 'major_happy', changeState);
+            unRippled(sprite);
                break;
            case 'neutral':
+           //console.log("n2");
+           sprite.happinessScale++;
+           sprite.sm.transition('insired', 'neutral', 'major_neutral', changeState);
+           unRippled(sprite);
                break;
            case 'sad':
+            //console.log("s2");
+            sprite.happinessScale++;
                break;
+            default:
+                break;
         }
-       
+    }
     }
 }
 
-// Brings the yolk back to normal and stops the ripple effect
+//Bring inspired yolks back to normal state after rippled
+function unRippled(yolk){
+    //check happiness scale too
+    switch(yolk.sm.transition.currentState)
+    {
+        case 'major_happy':
+            yolk.sm.transition('happy', 'major_happy', 'happy', changeState );
+        break;
+        case 'major_neutral':
+            yolk.sm.transition('neutral', 'major_neutral', 'neutral', changeState );
+        break;
+        default:
+        break;
+    }
+}
+
+// Brings the yolk back to normal 
 function normalizeIt(yolk){
     var sprite = yolk;
     sprite.inputEnabled = true;
@@ -317,8 +359,8 @@ function increaseHappiness(sprite){
     if(sprite.happinessScale >= 10)
         sprite.happinessScale = 10;
         interactions++;
-        console.log("Happiness: " + sprite.happinessScale);
-        console.log(interactions);
+        //console.log("Happiness: " + sprite.happinessScale);
+        //console.log(interactions);
 }
 
 // Predicate function used for transition
@@ -383,12 +425,6 @@ function gofull() {
 // For every collision there is a chance of a random  interaction
 function collisionHandler(yolk1, yolk2){
     var positiveInteraction = game.rnd.integerInRange(0, 100);
-
-    // if(yolk1.interacted.currentState == "inspired" || yolk2.interacted.currentState == "inspired")
-    // {
-    //     console.log("INSPIRED");
-    // }
-    // 1/100 chance its positive
     if(positiveInteraction == 50)
     {
         // Increase happinessScale for both yolks
@@ -437,28 +473,42 @@ function yolkMovement(){
             yolk.body.velocity.y = -30 * 1; 
         }
     });
+}
+
+function setStorage(){
+    var updateStorage = game.rnd.integerInRange(0, 10);
+
+    if(updateStorage < 5){
+    if(sessionStorage.getItem('rippleEffected') === null ){
+        sessionStorage.setItem('rippleEffected', 0);
+    }
+    else {
+        sessionStorage.setItem('rippleEffected',rippleEffected);
+    }
+    
+    if(sessionStorage.getItem('interactions') === null){
+        sessionStorage.setItem('interactions', 0);
+    }
+    else {
+        sessionStorage.setItem('interactions', interactions);
+    }
+}
+    //console.log("inter: " + sessionStorage.getItem('interactions'));
+    //console.log("ripple: " + sessionStorage.getItem('rippleEffected'));
+    
 
 }
 
 // Update Function
 function update() {
+    console.log(lifeTimer);
+    yolkMovement();
     // Adds collisions to all Yolks
     this.game.physics.arcade.collide(yolkWorld, yolkWorld, collisionHandler, null, this);
+
     this.game.physics.arcade.overlap(yolkWorld, yolkWorld, rippleEffect, null, this);
-    yolkMovement();
-
-    if(sessionStorage.getItem('interactions') === null){
-        sessionStorage.setItem('interactions',0);
-    }
-    else {
-        sessionStorage.key = 'interactions'
-        sessionStorage.setItem('interactions',interactions);
-    }
-
-
-    if(localStorage.getItem('ripples') === null){
-       localStorage.setItem('ripples',0);
-    }
+   
+    setStorage();
 
 }
 
