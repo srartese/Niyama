@@ -18,7 +18,7 @@ var childYolk;
 var interactions;
 var rippleEffected;
 var yolkCounter;
-var numYolks = 120;
+var numYolks = 200;
 //var yolkTimer;
 
 //1620 x 1080. So the program just needs to have a 150 px bar on both sides 3840, 2560, 
@@ -472,6 +472,9 @@ function yolkMovement(){
         else if (yolk.sm.currentState == "happy" && yolk.y > (window.innerHeight/5) * 2 ) {
             yolk.body.velocity.y = -30 * 1; 
         }
+        else if (yolk.sm.currentState == "major_happy" && yolk.y > (window.innerHeight/5) * 2 ) {
+            yolk.body.velocity.y = -30 * 1; 
+        }
     });
 }
 
@@ -501,10 +504,10 @@ function setStorage(){
 
 // Update Function
 function update() {
-    console.log(lifeTimer);
+    //console.log(lifeTimer);
     yolkMovement();
     // Adds collisions to all Yolks
-    this.game.physics.arcade.collide(yolkWorld, yolkWorld, collisionHandler, null, this);
+    //this.game.physics.arcade.collide(yolkWorld, yolkWorld, collisionHandler, null, this);
 
     this.game.physics.arcade.overlap(yolkWorld, yolkWorld, rippleEffect, null, this);
    
