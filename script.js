@@ -470,10 +470,10 @@ function yolkMovement(){
             yolk.body.velocity.y = -25 * 1; 
         } 
         else if (yolk.sm.currentState == "happy" && yolk.y > (window.innerHeight/5) * 2 ) {
-            yolk.body.velocity.y = -30 * 1; 
+            yolk.body.velocity.y = -20 * 1; 
         }
         else if (yolk.sm.currentState == "major_happy" && yolk.y > (window.innerHeight/5) * 2 ) {
-            yolk.body.velocity.y = -30 * 1; 
+            yolk.body.velocity.y = -20 * 1; 
         }
     });
 }
