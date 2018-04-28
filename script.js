@@ -82,7 +82,7 @@ function create() {
     }
 
      // Start Life Cycle Delay
-     lifeTimer.start();
+     //lifeTimer.start();
 
     // Resize to fill full screen
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
@@ -100,11 +100,11 @@ function addYolk(){
     {
         yolkNum = game.rnd.integerInRange(0, 3);
     }
-    else if(chance > 3 && chance <= 6)
+    else if(chance > 3 && chance <= 9)
     {
         yolkNum = game.rnd.integerInRange(4, 6);
     }
-    if(chance >= 7)
+    if(chance == 10)
     {
         yolkNum = game.rnd.integerInRange(7, 10);
     }
@@ -165,7 +165,7 @@ function iTapped(sprite, pointer, happiness) {
     if(sprite.sm.currentState == "neutral"){
 
         //sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
-        sprite.sm.transition('major_neutral', 'neutral', 'major_neutral', changeState );
+        sprite.sm.transition('major_neutral', 'neutral', 'happy', changeState );
 
         interactions++;
         sprite.happinessScale = 10;
