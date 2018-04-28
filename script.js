@@ -496,8 +496,8 @@ function setStorage(){
         sessionStorage.setItem('interactions', interactions);
     }
 }
-    //console.log("inter: " + sessionStorage.getItem('interactions'));
-    //console.log("ripple: " + sessionStorage.getItem('rippleEffected'));
+    console.log("inter: " + sessionStorage.getItem('interactions'));
+    console.log("ripple: " + sessionStorage.getItem('rippleEffected'));
     
 
 }
