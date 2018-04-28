@@ -164,7 +164,7 @@ function iTapped(sprite, pointer, happiness) {
     // NEUTRAL YOLK TAPPED
     if(sprite.sm.currentState == "neutral"){
 
-        sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
+        //sprite.body.velocity.set(game.rnd.integerInRange(0, 0), game.rnd.integerInRange(0, 0)); 
         sprite.sm.transition('major_neutral', 'neutral', 'major_neutral', changeState );
 
         interactions++;
@@ -472,9 +472,9 @@ function yolkMovement(){
         else if (yolk.sm.currentState == "happy" && yolk.y > (window.innerHeight/5) * 2 ) {
             yolk.body.velocity.y = -20 * 1; 
         }
-        else if (yolk.sm.currentState == "major_happy" && yolk.y > (window.innerHeight/5) * 2 ) {
-            yolk.body.velocity.y = -20 * 1; 
-        }
+        // else if (yolk.sm.currentState == "major_happy" && yolk.y > (window.innerHeight/5) * 2 ) {
+        //     yolk.body.velocity.y = -20 * 1; 
+        // }
     });
 }
 
